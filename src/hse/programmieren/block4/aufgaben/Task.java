@@ -1,17 +1,22 @@
 package hse.programmieren.block4.aufgaben;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class Task {
 
     static void main() {
-
+printDistinctCars();
     }
 
     // Array
     public static void printEverySecondCar() {
         // 10 cars
         String[] vehicles = {"BMW", "Audi", "VW", "Mercedes", "Seat", "Skoda", "Ford", "Tesla", "Fiat", "Porsche"};
+
+        for (int i = 0; i < vehicles.length; i+=2) {
+            System.out.println(vehicles[i]);
+        }
 
 
     }
@@ -30,12 +35,16 @@ public class Task {
         vehicles.add("Tesla");
         vehicles.add("Fiat");
         vehicles.add("Porsche");
+
+        for(int i=vehicles.size()-1;i>=0;i--){
+            System.out.println(vehicles.get(i));
+        }
     }
 
     // Iterator
     public static void printAndDeleteCars() {
         // 10 cars
-        ListIterator<String> vehicles = new ArrayList<String>().listIterator();
+        ArrayList<String> vehicles = new ArrayList<String>();
         vehicles.add("BMW");
         vehicles.add("Audi");
         vehicles.add("VW");
@@ -46,8 +55,12 @@ public class Task {
         vehicles.add("Tesla");
         vehicles.add("Fiat");
         vehicles.add("Porsche");
-
-
+Iterator<String> iterator= vehicles.iterator();
+while (iterator.hasNext()){
+    System.out.println(iterator.next());
+    iterator.remove();
+}
+System.out.println(vehicles);
     }
 
     // HashMap
@@ -63,7 +76,21 @@ public class Task {
         vehicles.put("Ford", 33_000);
         vehicles.put("Tesla", 60_000);
         vehicles.put("Fiat", 10_000);
+       vehicles.put("Bobbycar", 20);
         vehicles.put("Porsche", 99_000);
+int biggestPrice = 0;
+String nameoftheCar = "undefined";
+
+
+       for(Map.Entry<String, Integer> entry  : vehicles.entrySet()){
+           if (biggestPrice < entry.getValue()){
+biggestPrice = entry.getValue();
+nameoftheCar = entry.getKey();
+           }
+       }
+System.out.println("Auto: "+ nameoftheCar + "Preis: "+ biggestPrice);
+
+
     }
 
     // HashSet
@@ -80,5 +107,8 @@ public class Task {
         vehicles.add("Tesla");
         vehicles.add("Fiat");
         vehicles.add("Fiat");
+        for( String vehicle: vehicles){
+            System.out.println(vehicle);
+        }
     }
 }
