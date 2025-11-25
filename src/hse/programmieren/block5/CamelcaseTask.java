@@ -4,18 +4,11 @@ public class CamelcaseTask {
 
     static void main() {
 
-        System.out.println(palinGenOneline("lager"));
+        System.out.println(palindrome("lager"));
     }
 
-    static String palinGenOneline(String input) {
-        return input.length() == 1 ? "" + input.charAt(0) : input.charAt(0) + palinGenOneline(input.substring(1)) + input.charAt(0);
+    static String palindrome(String input) {
+        return null;
     }
 
-    static String lowerCaseString(String value) {
-        return "";
-    }
-
-    static String upperCaseString(String value) {
-        return "";
-    }
 }

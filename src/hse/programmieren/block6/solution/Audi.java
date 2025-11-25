@@ -6,13 +6,13 @@ public class Audi extends Vehicle implements Hybrid {
     private int fuelLevel;
 
     @Override
-    void drive() {
+    public void drive() {
         this.speed += 20;
         consume(10);
     }
 
     @Override
-    void brake() {
+    public void brake() {
         this.speed -= 20;
         add(1);
     }
