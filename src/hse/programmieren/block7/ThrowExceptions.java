@@ -1,0 +1,20 @@
+package hse.programmieren.block7;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class ThrowExceptions {
+
+    static void main() {
+        Scanner scanner = new Scanner(System.in);
+
+        final Number number = scanner.nextInt();
+
+        if (number.equals(0)) {
+            throw new RuntimeException("Ungültige Zahl, Programm wird gestoppt");
+        }
+
+        System.out.println(number);
+
+    }
+}
