@@ -5,13 +5,13 @@ public class VW extends Vehicle implements Electric {
     private int energyLevel;
 
     @Override
-    void drive() {
+    public void drive() {
         this.speed += 20;
         consume(10);
     }
 
     @Override
-    void brake() {
+    public void brake() {
         this.speed -= 20;
         add(1);
     }
@@ -28,5 +28,13 @@ public class VW extends Vehicle implements Electric {
 
     public int getEnergyLevel() {
         return this.energyLevel;
+    }
+
+    @Override
+    public String toString() {
+        return "VW{" +
+                "speed=" + speed +
+                ", energyLevel=" + energyLevel +
+                '}';
     }
 }

@@ -1,19 +1,36 @@
 package hse.programmieren.block6;
 
-import hse.programmieren.block6.task.CombustionCar;
-import hse.programmieren.block6.task.ElectricCar;
-import hse.programmieren.block6.task.Vehicle;
+import hse.programmieren.block6.solution.Audi;
+import hse.programmieren.block6.solution.BMW;
+import hse.programmieren.block6.solution.VW;
+import hse.programmieren.block6.solution.Vehicle;
+
+import java.util.Arrays;
 
 public class Main {
 
     static void main() {
 
-        CombustionCar car = new CombustionCar(100, 80);
-        Vehicle electricCar = new ElectricCar(100, 80);
-//        Vehicle car2 = new Vehicle(100, 80);
+        Vehicle vw = new VW(); // electrical
+        Vehicle bmw = new BMW(); // combustion
+        Audi audi = new Audi(); // electrical + combustion
+        int i = audi.energyLevel;
+        audi.drive();
 
-        electricCar.drive();
-        System.out.println(electricCar);
+        int[] array = {6};
+        int bla = array.length;
+
+        vw.drive();
+        vw.brake();
+        bmw.drive();
+        bmw.brake();
+        audi.drive();
+        audi.brake();
+
+        System.out.println(vw);
+        System.out.println(bmw);
+        System.out.println(audi);
+
 
     }
 

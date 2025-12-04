@@ -4,6 +4,6 @@ public abstract class Vehicle {
 
     protected int speed;
 
-    abstract void drive();
-    abstract void brake();
+    public abstract void drive();
+    public abstract void brake();
 }

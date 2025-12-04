@@ -1,8 +1,8 @@
 package hse.programmieren.block6.solution;
 
-public class Audi extends Vehicle implements Hybrid {
+public class Audi extends Vehicle implements Electric, Combustion {
 
-    private int energyLevel;
+    public int energyLevel;
     private int fuelLevel;
 
     @Override
@@ -34,5 +34,14 @@ public class Audi extends Vehicle implements Hybrid {
 
     public int getFuelLevel() {
         return this.fuelLevel;
+    }
+
+    @Override
+    public String toString() {
+        return "Audi{" +
+                "energyLevel=" + energyLevel +
+                ", fuelLevel=" + fuelLevel +
+                ", speed=" + speed +
+                '}';
     }
 }
