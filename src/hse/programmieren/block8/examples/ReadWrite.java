@@ -8,9 +8,11 @@ import java.util.Scanner;
 public class ReadWrite {
 
     static void main() throws Exception {
+        /*
         Writer writer = new FileWriter("_write.txt");
-        writer.write("programmieren-1");
+        writer.write("programmieren-111");
         writer.close();
+        */
 
         Scanner scanner = new Scanner(new File("_read.txt"));
 
