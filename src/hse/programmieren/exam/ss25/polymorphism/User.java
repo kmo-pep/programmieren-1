@@ -1,4 +1,4 @@
-package polymorphism;
+package hse.programmieren.exam.ss25.polymorphism;
 
 class User {
     private final String name;

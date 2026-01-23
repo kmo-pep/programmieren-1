@@ -1,4 +1,4 @@
-package methods;
+package hse.programmieren.exam.ss25.methods;
 
 import java.util.Arrays;
 

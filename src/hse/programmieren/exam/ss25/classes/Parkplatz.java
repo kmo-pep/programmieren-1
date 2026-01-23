@@ -1,4 +1,4 @@
-package classes;
+package hse.programmieren.exam.ss25.classes;
 
 public class Parkplatz {
     private final int nummer;

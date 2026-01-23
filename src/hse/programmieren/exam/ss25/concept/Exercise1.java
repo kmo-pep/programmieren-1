@@ -1,4 +1,4 @@
-package concept;
+package hse.programmieren.exam.ss25.concept;
 
 public class Exercise1 {
 

@@ -1,4 +1,4 @@
-package classes;
+package hse.programmieren.exam.ss25.classes;
 
 public class Auto {
     private final String kennzeichen;

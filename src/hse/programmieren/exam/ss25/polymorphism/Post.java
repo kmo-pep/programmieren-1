@@ -1,4 +1,4 @@
-package polymorphism;
+package hse.programmieren.exam.ss25.polymorphism;
 
 import java.util.ArrayList;
 import java.util.List;

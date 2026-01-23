@@ -1,4 +1,4 @@
-package debugging;
+package hse.programmieren.exam.ss25.debugging;
 
 public class Exercise5_1 {
     static void main() {

@@ -1,4 +1,4 @@
-package polymorphism;
+package hse.programmieren.exam.ss25.polymorphism;
 
 public class Exercise4 {
     static void main() {

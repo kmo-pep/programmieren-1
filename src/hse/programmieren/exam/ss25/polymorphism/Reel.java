@@ -1,4 +1,4 @@
-package polymorphism;
+package hse.programmieren.exam.ss25.polymorphism;
 
 class Reel extends Post {
     private final int durationInSeconds;
