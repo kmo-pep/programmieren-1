@@ -44,4 +44,14 @@ public class Vehicle {
     public void setMotor(Motor motor) {
         this.motor = motor;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "model='" + model + '\'' +
+                ", price=" + price +
+                ", farbe=" + farbe +
+                ", motor=" + motor +
+                '}';
+    }
 }

@@ -23,4 +23,13 @@ public class Motor {
     public String getTreibstoff() {
         return treibstoff;
     }
+
+    @Override
+    public String toString() {
+        return "Motor{" +
+                "hubraum=" + hubraum +
+                ", ps=" + ps +
+                ", treibstoff='" + treibstoff + '\'' +
+                '}';
+    }
 }
